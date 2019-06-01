@@ -16,18 +16,19 @@ namespace WebApplication
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            Response.Write(txtName.Text + "</br>");
-            Response.Write(lstLocation.SelectedItem.Text + "</br>");
+            // Session["name"] = txtName.Text;
+            Session["name"] = "dummy_text";
+            Response.Write(Session["Name"]);
 
-            lblName.Visible = false;
-            txtName.Visible = false;
-            lstLocation.Visible = false;
-            chkC.Visible = false;
-            chkJava.Visible = false;
-            chkPython.Visible = false;
-            rdMale.Visible = false;
-            rdFemale.Visible = false;
-            btnSubmit.Visible = false;
+            // lblName.Visible = false;
+            // txtName.Visible = false;
+            // lstLocation.Visible = false;
+            // chkC.Visible = false;
+            // chkJava.Visible = false;
+            // chkPython.Visible = false;
+            // rdMale.Visible = false;
+            // rdFemale.Visible = false;
+            // btnSubmit.Visible = false;
         }
     }
 }
