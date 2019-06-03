@@ -9,9 +9,11 @@
 <body>
     <form id="form1" runat="server">
         <TWebControl:WebControl id="header" runat="server" MinValue="100"/>
-	</form>
     <div style="color:#0000FF">
+        <asp:Button ID="btnAllRows" runat="server" OnClick="btnAllRows_Click" Text="Fetch All Rows!" />
+        <br />
         Demo form
     </div>
-</body>
+	</form>
+    </body>
 </html>
